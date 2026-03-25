@@ -21,12 +21,12 @@ It attaches a session-scoped watcher to a workflow run, polls GitHub periodicall
 
 ## Install
 
-### From this repository
+### From npm
 
-Until the package is published to npm, install it directly from Git:
+Install the published package directly:
 
 ```bash
-omp plugin install git+https://github.com/maximhar/omp-github-action-watcher.git
+omp plugin install @maximhar/omp-github-action-watch
 ```
 
 ### Local development link
