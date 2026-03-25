@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "@maximhar/omp-github-action-watch",
+      "name": "omp-github-action-watcher",
       "devDependencies": {
         "@types/bun": "^1.3",
         "@typescript/native-preview": "^7.0.0-dev.20260302.1",

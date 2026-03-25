@@ -1,4 +1,4 @@
-# @maximhar/omp-github-action-watch
+# omp-github-action-watcher
 
 Oh My Pi plugin for watching GitHub Actions workflow runs from an active OMP session.
 
@@ -26,7 +26,7 @@ It attaches a session-scoped watcher to a workflow run, polls GitHub periodicall
 Install the published package directly:
 
 ```bash
-omp plugin install @maximhar/omp-github-action-watch
+omp plugin install omp-github-action-watcher
 ```
 
 ### Local development link
@@ -37,7 +37,7 @@ If you are iterating on the plugin locally:
 cd /path/to/omp-github-action-watcher
 bun install
 bun link
-omp plugin install @maximhar/omp-github-action-watch
+omp plugin install omp-github-action-watcher
 ```
 
 You can also link the working tree directly:
@@ -88,6 +88,7 @@ The extension entry point is `src/extension.ts`.
 
 - Pushes to `main` and pull requests run CI, verify the package, and build an npm tarball artifact.
 - Publishing is handled by GitHub Actions when you publish a GitHub Release, or manually via the `Publish to npm` workflow.
+- The repo version is now anchored at `1.0.0`; each successful npm publish auto-increments the patch version and commits the new published version back to `main`.
 - The publish workflow uses the repository `NPM_TOKEN` secret and runs `npm publish --provenance`.
 
 
