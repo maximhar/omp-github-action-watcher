@@ -79,11 +79,17 @@ stop_github_action_watch owner=payhawk repo=emi-service run_id=23532645155
 
 ```bash
 bun install
-bun test
-bun run check
+bun run verify
 ```
 
 The extension entry point is `src/extension.ts`.
+
+## Release
+
+- Pushes to `main` and pull requests run CI, verify the package, and build an npm tarball artifact.
+- Publishing is handled by GitHub Actions when you publish a GitHub Release, or manually via the `Publish to npm` workflow.
+- The publish workflow uses the repository `NPM_TOKEN` secret and runs `npm publish --provenance`.
+
 
 ## Repository layout
 
