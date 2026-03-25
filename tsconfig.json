@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"target": "ES2024",
+		"module": "ESNext",
+		"lib": ["ES2024", "DOM.AsyncIterable"],
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"moduleResolution": "Bundler",
+		"resolveJsonModule": true,
+		"types": ["bun", "assets"],
+		"typeRoots": ["./types", "./node_modules/@types"],
+		"noEmit": true
+	},
+	"include": ["src/**/*.ts", "test/**/*.ts"],
+	"exclude": ["node_modules", "dist"],
+	"files": ["./types/assets/index.d.ts"]
+}

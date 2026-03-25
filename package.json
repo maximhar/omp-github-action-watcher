@@ -1,0 +1,50 @@
+{
+	"type": "module",
+	"name": "@maximhar/omp-github-action-watch",
+	"version": "13.13.2",
+	"description": "Oh My Pi plugin for watching GitHub Actions workflow runs from an OMP session.",
+	"homepage": "https://github.com/maximhar/omp-github-action-watcher#readme",
+	"author": "Maxim Harizanov",
+	"contributors": [
+		"Can Boluk"
+	],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/maximhar/omp-github-action-watcher.git"
+	},
+	"bugs": {
+		"url": "https://github.com/maximhar/omp-github-action-watcher/issues"
+	},
+	"keywords": [
+		"github",
+		"github-actions",
+		"watcher",
+		"extension",
+		"oh-my-pi",
+		"omp",
+		"sessions"
+	],
+	"scripts": {
+		"check": "tsgo -p tsconfig.json",
+		"test": "bun test"
+	},
+	"peerDependencies": {
+		"@oh-my-pi/pi-coding-agent": "^13"
+	},
+	"devDependencies": {
+		"@types/bun": "^1.3",
+		"@typescript/native-preview": "^7.0.0-dev.20260302.1"
+	},
+	"engines": {
+		"bun": ">=1.3.7"
+	},
+	"omp": {
+		"extensions": [
+			"./src/extension.ts"
+		]
+	},
+	"files": [
+		"src"
+	]
+}
