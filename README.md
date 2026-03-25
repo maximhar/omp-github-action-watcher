@@ -102,10 +102,6 @@ test/
   watch-registry.test.ts
 ```
 
-## Attribution
-
-This repository is a standalone fork of the original GitHub Actions watch plugin work from the Oh My Pi monorepo by Can Boluk, adapted and maintained here under the MIT license.
-
 ## License
 
 MIT
